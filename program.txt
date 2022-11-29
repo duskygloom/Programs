@@ -1,0 +1,8 @@
+*** PROGRAMS ***
+
+1. Read a number n and find the sum: 1 + 1/2 + 1/3 ... + 1/n - 1/50.
+
+2. Read a positive integer and print it in reverse order.
+
+3. Read a positive integer and find sum of all its digits.
+

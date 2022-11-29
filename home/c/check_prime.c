@@ -5,7 +5,7 @@
 
 int main()
 {
-	int n, i, root_ceil, is_prime;
+	int n, i, root_floor, is_prime;
 	printf("Number: ");
 	scanf("%d", &n);
 
@@ -14,10 +14,10 @@ int main()
 		return 0;
 	}
 
-	root_ceil = sqrt(n) + 1;
+	root_floor = sqrt(n);
 	is_prime = 1;
 
-	for (i=2; i<root_ceil; ++i) {
+	for (i=2; i<=root_floor; ++i) {
 		if (n % i == 0) {
 			is_prime = 0;
 			break;
