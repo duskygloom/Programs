@@ -1,4 +1,0 @@
-1. Write a program that reads a positive integer and checks if it is a prime number or not.
-
-2. Write a program that reads a positive integer and prints all prime numbers less than or equal to n.
-
