@@ -2,17 +2,11 @@
 
 int main()
 {
-	int a, b;					// a > b
+	int a, b;
 	printf("Number A: ");
 	scanf("%d", &a);
 	printf("Number B: ");
 	scanf("%d", &b);
-
-//	if (a < b) {
-//		int temp = a;
-//		a = b;
-//		b = temp;
-//	}
 
 	int dvdend = a;
 	int gcd, dvsor;					// considering a / b
