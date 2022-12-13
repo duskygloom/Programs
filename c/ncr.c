@@ -10,6 +10,7 @@ int main()
         c *= (float)n - i;
         c /= (float)r - i;
     }
-    printf("nCr = %.2f\n", c);
+    printf("%dC%d = %.2f\n", n, r, c);
     return 0;
 }
+
