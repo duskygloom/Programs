@@ -19,12 +19,12 @@ int main()
 double ncr(int n, int r)
 {
 	int i;
-    double c = 1.0;
-    for (i=0; i<r; ++i) {
-        c *= n - i;
-        c /= r - i;
-    }
-    return c;
+	double c = 1.0;
+	for (i=0; i<r; ++i) {
+		c *= n - i;
+		c /= r - i;
+	}
+	return c;
 }
 
 double exponent(int base, int power)
