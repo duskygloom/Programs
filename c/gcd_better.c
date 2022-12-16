@@ -1,17 +1,22 @@
 #include <stdio.h>
 
+int gcd(int dvdend, int dvsor);
+
 int main()
 {
 	int a, b;
 	printf("Number A: ");
 	scanf("%d", &a);
 	printf("Number B: ");
-	scanf("%d", &b);
+	scanf("%d", &b);	
+	printf("GCD of %d and %d: %d\n", a, b, gcd(a, b));
+	return 0;
+}
 
-	int dvdend = a;
-	int gcd, dvsor;					// considering a / b
-	gcd = dvsor = b;
-	int rmder = dvdend % dvsor ;	// any non-zero value
+int gcd(int dvdend, int dvsor)
+{
+	int gcd = dvsor;
+	int rmder = dvdend % dvsor;
 
 	while (rmder != 0) {
 		rmder = dvdend % dvsor;
@@ -20,7 +25,6 @@ int main()
 		dvsor = rmder;
 	}
 
-	printf("GCD of %d and %d: %d\n", a, b, gcd);
-	return 0;
+	return gcd;
 }
 
